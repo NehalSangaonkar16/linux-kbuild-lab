@@ -1,0 +1,15 @@
+menu "Kbuild Learning Subsystem"
+
+config KBUILD_LAB
+    tristate "Enable Kbuild Learning Subsystem"
+    default m
+    help
+      Enables a mini subsystem to understand Linux kernel build system.
+
+config KBUILD_LAB_DEBUG
+    bool "Enable debug prints"
+    depends on KBUILD_LAB
+    help
+      Enables verbose debug logs.
+
+endmenu
